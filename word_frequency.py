@@ -18,9 +18,7 @@ def print_word_freq(file):
     for word in match_pattern:
       count = frequency.get(word, 0)
       frequency[word] = count + 1
-    frequency_list = frequency.keys()
-    print(frequency)
-    for words in frequency_list:
+    for words in frequency:
         print(words,frequency[words])
 
         # lyrics = f.readlines()
